@@ -1,9 +1,13 @@
+package Runner;
+
+import config.Setup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import page.LoginPage;
 
-public class LoginTestRunner extends Setup{
+public class LoginTestRunner extends Setup {
     LoginPage loginPage;
 
     @Test(priority = 1, description = "Admin login with wrong creds")

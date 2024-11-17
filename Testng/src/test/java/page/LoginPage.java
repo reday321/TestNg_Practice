@@ -1,5 +1,5 @@
-import org.openqa.selenium.JavascriptException;
-import org.openqa.selenium.JavascriptExecutor;
+package page;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,10 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage  {
 
     @FindBy(id = "email")
-    WebElement textEmail;
+    public WebElement textEmail;
 
     @FindBy(id = "password")
-    WebElement textPassword;
+    public WebElement textPassword;
 
     @FindBy(css = "[type=submit]")
     WebElement btnLogin;
